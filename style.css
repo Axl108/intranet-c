@@ -5,6 +5,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: rgba(35, 31, 32, 0.05);
+    max-height: 928px;
 }
 
 .bg-orange {
@@ -93,19 +95,71 @@ input::placeholder {
     margin-top: -8px;
 }
 
-.home {
-    background-color: #231F20;
-    opacity: 0.05;
-}
-
 .menu {
-    display: inline;
     background-color: #FFFFFF;
-    width: 25%;
-    height: 900px;
+    width: 23%;
+    max-height: 928px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contenido {
-    width: 70%;
+    width: 77%;
+    padding-top: 88px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.noticias, .calendario, .eventos {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    height: 260px;
+}
+
+.noticias {
+    width: 672px;
+}
+
+.calendario {
+    width: 320px;
+}
+
+.linea, .linea-dos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.caja-large {
+    width: 672px;
+}
+
+.caja-short {
+    width: 320px
+}
+
+.seccion {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #AC4508;
+}
+
+.avisos {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.avisos-dentro {
+    height: 300px !important;
+    width: 200px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    height: 260px;
+}
+
+.linea-dos {
+    margin-top: 60px;
 }
