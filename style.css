@@ -9,6 +9,20 @@ body {
     max-height: 928px;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
 .bg-orange {
     background: linear-gradient(180deg, #FFFFFF -260.71%, rgba(255, 255, 255, 0) 100%), #EF7B10;
     width: 100%;
@@ -32,6 +46,11 @@ body {
     display: block;
     margin: 32px auto;
 
+}
+
+.logo-principal {
+    margin-top: 32px;
+    margin-bottom: 40px;
 }
 
 input {
@@ -98,8 +117,11 @@ input::placeholder {
 .menu {
     background-color: #FFFFFF;
     width: 23%;
-    max-height: 928px;
+    height: 928px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenido {
@@ -152,14 +174,154 @@ input::placeholder {
 }
 
 .avisos-dentro {
-    height: 300px !important;
+    height: 300px;
     width: 200px;
     background-color: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-    height: 260px;
 }
 
 .linea-dos {
     margin-top: 60px;
+}
+
+.opciones-menu {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+
+.opciones {
+    width: 240px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+}
+
+.opciones:hover {
+    background: linear-gradient(180deg, #FFFFFF -260.71%, rgba(255, 255, 255, 0) 100%), #EF7B10;
+    box-shadow: 0px 2px 10px rgba(239, 123, 16, 0.4);
+    border-radius: 8px;
+}
+
+.boton-close {
+    border-radius: 50px;
+    border: 1px solid #231F20;
+    height: 40px;
+    width: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.boton-close a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+.opciones-menu .opciones svg {
+    margin-right: 16px;
+}
+
+.legales {
+    text-align: center;
+    color: #EF7B10;
+    margin-bottom: 24px;
+}
+
+.link {
+    color: #EF7B10;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.profile .foto img {
+    width: 68px;
+}
+
+.profile {
+    min-width: 236px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 48px;
+}
+
+.avisos-dentro {
+    padding: 16px;
+}
+
+.avisos-dentro img {
+    width: 168px;
+    height: 120px;
+    margin-bottom: 16px;
+}
+
+.eventos {
+    width: 320px;
+    height: 92px;
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.day {
+    font-weight: 900;
+    font-size: 28px;
+    margin: 0;
+}
+
+.square-date {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #FFFFFF;
+   background-color: #EF7B10;
+   border-radius: 4px;
+   height: 31px;
+   width: 62px;
+}
+
+.month {
+    font-size: 12px;
+    margin: 0;
+}
+
+.square-left {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-right {
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nombre-evento {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.horario {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.linea-dos .caja-short {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
