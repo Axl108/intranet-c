@@ -140,10 +140,14 @@ input::placeholder {
 
 .noticias {
     width: 672px;
+    display: flex;
+    padding: 24px;
+    align-items: center;
 }
 
 .calendario {
     width: 320px;
+    padding: 24px;
 }
 
 .linea, .linea-dos {
@@ -223,7 +227,7 @@ input::placeholder {
     color: #231F20;
 }
 
-.opciones-menu .opciones svg {
+.opciones svg, .opciones-menu svg {
     margin-right: 16px;
 }
 
@@ -324,4 +328,73 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.description {
+    width: 70%;
+}
+
+.img-description {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-calendario {
+    display: flex;
+    justify-content: space-between;
+}
+
+.month-cal {
+    font-size: 20px;
+    font-weight: 800;
+    color: #EF7B10;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+}
+
+.week p {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.days p {
+    text-align: center;
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.weekend {
+    color: #EF7B10;
+}
+
+.m-before {
+    color: #231F20;
+    opacity: .25;
+}
+
+.opciones-inicio {
+    background: linear-gradient(180deg, #FFFFFF -260.71%, rgba(255, 255, 255, 0) 100%), #EF7B10;
+    box-shadow: 0px 2px 10px rgba(239, 123, 16, 0.4);
+    border-radius: 8px;
+    width: 240px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    color: #FFFFFF;
+}
+
+.opciones-menu svg {
+    fill: #FFFFFF;
 }
